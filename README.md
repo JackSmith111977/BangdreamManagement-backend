@@ -7,6 +7,8 @@
 
 前后端项目通过Docker部署在了阿里云Ecs服务器中，项目效果展示：[kei.click](https://kei.click)
 
+本人博客地址：[keidesu.top](https://keidesu.top)
+
 ## 项目简介
 
 TLias Web Management System 是一个完整的企业管理后台系统，采用现代化的Java技术栈构建，具备完善的权限控制、日志记录、数据统计等功能。
