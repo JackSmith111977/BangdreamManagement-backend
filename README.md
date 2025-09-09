@@ -1,6 +1,6 @@
 # TLias Web Management System
 
-基于Spring Boot的企业级后台管理系统，提供员工管理、部门管理、班级管理、学生管理等核心功能。
+基于Spring Boot的企业级后台管理系统(套皮成Bangdream少女乐队的形式了)，提供员工管理、部门管理、班级管理、学生管理等核心功能。
 
 ## 项目简介
 
