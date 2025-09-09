@@ -13,7 +13,6 @@ TLias Web Management System 是一个完整的企业管理后台系统，采用�
 - **数据库**: MySQL
 - **安全框架**: JWT Token认证
 - **对象存储**: 阿里云OSS
-- **API文档**: Swagger/OpenAPI
 - **构建工具**: Maven
 
 ## 核心功能模块
