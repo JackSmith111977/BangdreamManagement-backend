@@ -1,0 +1,1148 @@
+2025-07-22 16:07:24.361 [main] INFO  c.k.t.TliasWebManagement1Application-Starting TliasWebManagement1Application using Java 17.0.14 with PID 35852 (F:\学习资料\编程\后端开发\kei\tlias-web-management1\target\classes started by hp in F:\学习资料\编程\后端开发\kei\tlias-web-management1)
+2025-07-22 16:07:24.363 [main] INFO  c.k.t.TliasWebManagement1Application-No active profile set, falling back to 1 default profile: "default"
+2025-07-22 16:07:26.752 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-07-22 16:07:26.767 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-22 16:07:26.768 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-07-22 16:07:26.808 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-22 16:07:26.885 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-07-22 16:07:26.885 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2468 ms
+2025-07-22 16:07:28.616 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2025-07-22 16:07:28.685 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-07-22 16:07:28.712 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-07-22 16:07:28.728 [main] INFO  c.k.t.TliasWebManagement1Application-Started TliasWebManagement1Application in 4.921 seconds (process running for 6.723)
+2025-07-22 16:07:29.346 [RMI TCP Connection(3)-192.168.3.75] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-22 16:07:29.347 [RMI TCP Connection(3)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-07-22 16:07:29.348 [RMI TCP Connection(3)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-07-22 16:07:29.349 [RMI TCP Connection(2)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-07-22 16:07:30.918 [RMI TCP Connection(2)-192.168.3.75] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cdf0ff3
+2025-07-22 16:07:30.924 [RMI TCP Connection(2)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-07-22 16:20:02.215 [http-nio-8080-exec-5] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 16:20:02.218 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:20:02.218 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 16:20:02.218 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 16:20:02.221 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 16:20:02.222 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 16:20:02.229 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:20:02.230 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:20:02.230 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:20:02.230 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:20:02.230 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:20:02.230 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:20:10.165 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：64
+2025-07-22 16:20:10.166 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:20:10.166 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:20:10.166 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:20:10.166 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:20:10.166 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：64
+2025-07-22 16:20:14.055 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：66
+2025-07-22 16:20:14.056 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:20:14.056 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:20:14.056 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:20:14.056 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:20:14.056 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：66
+2025-07-22 16:20:46.205 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:20:46.205 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:20:46.205 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:20:46.206 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:20:46.206 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:20:46.206 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:20:46.207 [http-nio-8080-exec-6] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 16:20:46.207 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:20:46.207 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 16:20:46.207 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 16:20:46.207 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 16:20:46.207 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 16:20:52.017 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：66
+2025-07-22 16:20:52.018 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:20:52.018 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:20:52.018 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:20:52.018 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:20:52.018 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：66
+2025-07-22 16:20:56.507 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:20:56.509 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:20:56.509 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:20:56.509 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:20:56.510 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:20:56.510 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:20:59.500 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：64
+2025-07-22 16:20:59.500 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:20:59.500 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:20:59.500 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:20:59.500 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:20:59.500 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：64
+2025-07-22 16:23:10.750 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：66
+2025-07-22 16:23:10.750 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:23:10.750 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:23:10.751 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:23:10.751 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:23:10.751 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：66
+2025-07-22 16:23:52.434 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：63
+2025-07-22 16:23:52.434 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:23:52.434 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:23:52.434 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:23:52.434 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:23:52.434 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：63
+2025-07-22 16:23:56.540 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：64
+2025-07-22 16:23:56.540 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:23:56.541 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:23:56.541 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:23:56.542 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:23:56.542 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：64
+2025-07-22 16:24:00.853 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:24:00.853 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:24:00.853 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:24:00.854 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:24:00.854 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:24:00.854 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:25:32.708 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：66
+2025-07-22 16:25:32.708 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:25:32.708 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:25:32.708 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:25:32.708 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:25:32.708 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：66
+2025-07-22 16:26:03.588 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:26:03.589 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:26:03.589 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:26:03.589 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:26:03.589 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:26:03.589 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:26:11.325 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:26:11.326 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:26:11.326 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:26:11.326 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:26:11.326 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:26:11.327 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:30:24.403 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:30:24.403 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:30:24.403 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:30:24.403 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:30:24.403 [http-nio-8080-exec-7] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 16:30:24.404 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:30:24.404 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:30:24.404 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:30:24.404 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 16:30:24.404 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 16:30:24.404 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 16:30:24.404 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 16:30:30.624 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:30:30.624 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:30:30.625 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:30:30.625 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:30:30.625 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:30:30.625 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:30:39.357 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:30:39.357 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:30:39.357 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:30:39.357 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:30:39.357 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:30:39.357 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:31:05.660 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:31:05.660 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:31:05.660 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:31:05.660 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:31:05.660 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:31:05.660 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:31:05.661 [http-nio-8080-exec-1] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 16:31:05.661 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:31:05.661 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 16:31:05.661 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 16:31:05.661 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 16:31:05.661 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 16:31:11.214 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:31:11.215 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:31:11.215 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:31:11.215 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:31:11.215 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:31:11.215 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:31:15.881 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:31:15.882 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:31:15.882 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:31:15.882 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:31:15.882 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:31:15.882 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:31:47.729 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:31:47.729 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:31:47.729 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:31:47.729 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:31:47.729 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:31:47.729 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:31:47.732 [http-nio-8080-exec-10] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 16:31:47.732 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:31:47.733 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 16:31:47.733 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 16:31:47.733 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 16:31:47.733 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 16:31:57.564 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:31:57.565 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:31:57.565 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:31:57.565 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:31:57.565 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:31:57.565 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:32:02.812 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:32:02.812 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:32:02.812 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:32:02.812 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:32:02.812 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:32:02.812 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:38:40.808 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：66
+2025-07-22 16:38:40.808 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:38:40.809 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:38:40.809 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:38:40.809 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:38:40.809 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：66
+2025-07-22 16:38:51.068 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-新增员工信息：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:38:51.088 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 16:38:51.090 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@2097417411 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] for JDBC transaction
+2025-07-22 16:38:51.093 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@2097417411 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] to manual commit
+2025-07-22 16:38:51.095 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:38:51.095 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:38:51.095 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:38:51.095 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：save
+2025-07-22 16:38:51.095 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:38:51.652 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl.insertLog]
+2025-07-22 16:38:51.654 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@253238190 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] for JDBC transaction
+2025-07-22 16:38:51.654 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@253238190 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] to manual commit
+2025-07-22 16:38:51.655 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:38:51.655 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl@36603f59
+2025-07-22 16:38:51.655 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl
+2025-07-22 16:38:51.655 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：insertLog
+2025-07-22 16:38:51.655 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpLog(id=null, operateTime=2025-07-22T16:38:51.652855700, info=新增员工Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-22T16:38:51.095928100, updateTime=2025-07-22T16:38:51.095928100, deptName='null', exprList=[]})
+2025-07-22 16:38:51.801 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 16:38:51.801 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@253238190 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c]
+2025-07-22 16:38:51.922 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@253238190 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] after transaction
+2025-07-22 16:38:51.922 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-07-22 16:38:51.923 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction rollback
+2025-07-22 16:38:51.924 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Rolling back JDBC transaction on Connection [HikariProxyConnection@2097417411 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70]
+2025-07-22 16:38:51.949 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@2097417411 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] after transaction
+2025-07-22 16:38:51.953 [http-nio-8080-exec-3] ERROR c.k.t.exception.GlobalExceptionHandler-程序出错了喵~
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+### The error may exist in com/kei/tliaswebmanagement1/mapper/EmpMapper.java (best guess)
+### The error may involve com.kei.tliaswebmanagement1.mapper.EmpMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into emp (username, name, gender, phone, job, salary, image, entry_date, create_time, update_time, dept_id)                  values                 (?,?,?,?,?,?,?,?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+; Duplicate entry 'baibai' for key 'emp.username'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:254)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy98.insert(Unknown Source)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save(EmpServiceImpl.java:105)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.kei.tliaswebmanagement1.controller.EmpController.save(EmpController.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:382)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy130.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy129.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 78 common frames omitted
+2025-07-22 16:39:13.443 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-新增员工信息：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:39:13.444 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 16:39:13.444 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@456680659 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] for JDBC transaction
+2025-07-22 16:39:13.445 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@456680659 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] to manual commit
+2025-07-22 16:39:13.445 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:39:13.445 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:39:13.445 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:39:13.446 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：save
+2025-07-22 16:39:13.446 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:39:13.460 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl.insertLog]
+2025-07-22 16:39:13.461 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1518004334 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] for JDBC transaction
+2025-07-22 16:39:13.461 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1518004334 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] to manual commit
+2025-07-22 16:39:13.462 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:39:13.462 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl@36603f59
+2025-07-22 16:39:13.462 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl
+2025-07-22 16:39:13.462 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：insertLog
+2025-07-22 16:39:13.463 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpLog(id=null, operateTime=2025-07-22T16:39:13.460280200, info=新增员工Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-22T16:39:13.446660900, updateTime=2025-07-22T16:39:13.446660900, deptName='null', exprList=[]})
+2025-07-22 16:39:13.468 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 16:39:13.468 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1518004334 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c]
+2025-07-22 16:39:13.535 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1518004334 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] after transaction
+2025-07-22 16:39:13.535 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-07-22 16:39:13.536 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction rollback
+2025-07-22 16:39:13.536 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Rolling back JDBC transaction on Connection [HikariProxyConnection@456680659 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70]
+2025-07-22 16:39:13.547 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@456680659 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] after transaction
+2025-07-22 16:39:13.549 [http-nio-8080-exec-1] ERROR c.k.t.exception.GlobalExceptionHandler-程序出错了喵~
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+### The error may exist in com/kei/tliaswebmanagement1/mapper/EmpMapper.java (best guess)
+### The error may involve com.kei.tliaswebmanagement1.mapper.EmpMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into emp (username, name, gender, phone, job, salary, image, entry_date, create_time, update_time, dept_id)                  values                 (?,?,?,?,?,?,?,?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+; Duplicate entry 'baibai' for key 'emp.username'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:254)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy98.insert(Unknown Source)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save(EmpServiceImpl.java:105)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.kei.tliaswebmanagement1.controller.EmpController.save(EmpController.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:382)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy130.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy129.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 78 common frames omitted
+2025-07-22 16:39:30.356 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：66
+2025-07-22 16:39:30.356 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:39:30.356 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:39:30.356 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:39:30.356 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:39:30.356 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：66
+2025-07-22 16:39:46.233 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-新增员工信息：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:39:46.234 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 16:39:46.236 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@98680578 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] for JDBC transaction
+2025-07-22 16:39:46.236 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@98680578 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] to manual commit
+2025-07-22 16:39:46.238 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:39:46.238 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:39:46.238 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:39:46.238 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：save
+2025-07-22 16:39:46.238 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:39:46.244 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl.insertLog]
+2025-07-22 16:39:46.246 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@142493611 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] for JDBC transaction
+2025-07-22 16:39:46.246 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@142493611 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] to manual commit
+2025-07-22 16:39:46.247 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:39:46.247 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl@36603f59
+2025-07-22 16:39:46.248 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl
+2025-07-22 16:39:46.248 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：insertLog
+2025-07-22 16:39:46.248 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpLog(id=null, operateTime=2025-07-22T16:39:46.244964200, info=新增员工Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-22T16:39:46.239966600, updateTime=2025-07-22T16:39:46.239966600, deptName='null', exprList=[]})
+2025-07-22 16:39:46.253 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 16:39:46.254 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@142493611 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c]
+2025-07-22 16:39:46.336 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@142493611 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] after transaction
+2025-07-22 16:39:46.336 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-07-22 16:39:46.336 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction rollback
+2025-07-22 16:39:46.336 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Rolling back JDBC transaction on Connection [HikariProxyConnection@98680578 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70]
+2025-07-22 16:39:46.369 [http-nio-8080-exec-2] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@98680578 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] after transaction
+2025-07-22 16:39:46.370 [http-nio-8080-exec-2] ERROR c.k.t.exception.GlobalExceptionHandler-程序出错了喵~
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+### The error may exist in com/kei/tliaswebmanagement1/mapper/EmpMapper.java (best guess)
+### The error may involve com.kei.tliaswebmanagement1.mapper.EmpMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into emp (username, name, gender, phone, job, salary, image, entry_date, create_time, update_time, dept_id)                  values                 (?,?,?,?,?,?,?,?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+; Duplicate entry 'baibai' for key 'emp.username'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:254)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy98.insert(Unknown Source)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save(EmpServiceImpl.java:105)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.kei.tliaswebmanagement1.controller.EmpController.save(EmpController.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:382)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy130.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy129.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 78 common frames omitted
+2025-07-22 16:41:22.591 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-新增员工信息：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:41:22.591 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 16:41:22.592 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1383763242 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] for JDBC transaction
+2025-07-22 16:41:22.592 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1383763242 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] to manual commit
+2025-07-22 16:41:22.595 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:41:22.595 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:41:22.595 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:41:22.596 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：save
+2025-07-22 16:41:22.596 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:41:22.601 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl.insertLog]
+2025-07-22 16:41:22.602 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@291779038 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] for JDBC transaction
+2025-07-22 16:41:22.602 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@291779038 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] to manual commit
+2025-07-22 16:41:22.603 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:41:22.603 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl@36603f59
+2025-07-22 16:41:22.603 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl
+2025-07-22 16:41:22.603 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：insertLog
+2025-07-22 16:41:22.603 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpLog(id=null, operateTime=2025-07-22T16:41:22.601499800, info=新增员工Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-22T16:41:22.596501600, updateTime=2025-07-22T16:41:22.596501600, deptName='null', exprList=[]})
+2025-07-22 16:41:22.608 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 16:41:22.608 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@291779038 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c]
+2025-07-22 16:41:22.661 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@291779038 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] after transaction
+2025-07-22 16:41:22.661 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-07-22 16:41:22.661 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction rollback
+2025-07-22 16:41:22.661 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Rolling back JDBC transaction on Connection [HikariProxyConnection@1383763242 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70]
+2025-07-22 16:41:22.672 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1383763242 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] after transaction
+2025-07-22 16:41:22.672 [http-nio-8080-exec-9] ERROR c.k.t.exception.GlobalExceptionHandler-程序出错了喵~
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+### The error may exist in com/kei/tliaswebmanagement1/mapper/EmpMapper.java (best guess)
+### The error may involve com.kei.tliaswebmanagement1.mapper.EmpMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into emp (username, name, gender, phone, job, salary, image, entry_date, create_time, update_time, dept_id)                  values                 (?,?,?,?,?,?,?,?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+; Duplicate entry 'baibai' for key 'emp.username'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:254)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy98.insert(Unknown Source)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save(EmpServiceImpl.java:105)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.kei.tliaswebmanagement1.controller.EmpController.save(EmpController.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:382)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy130.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy129.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 78 common frames omitted
+2025-07-22 16:43:23.527 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-新增员工信息：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:43:23.528 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 16:43:23.530 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1151587831 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] for JDBC transaction
+2025-07-22 16:43:23.531 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1151587831 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] to manual commit
+2025-07-22 16:43:23.533 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:43:23.534 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:43:23.534 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:43:23.534 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：save
+2025-07-22 16:43:23.534 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:43:23.542 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl.insertLog]
+2025-07-22 16:43:23.543 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1617661119 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] for JDBC transaction
+2025-07-22 16:43:23.544 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1617661119 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] to manual commit
+2025-07-22 16:43:23.545 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:43:23.545 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl@36603f59
+2025-07-22 16:43:23.545 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl
+2025-07-22 16:43:23.545 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：insertLog
+2025-07-22 16:43:23.545 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpLog(id=null, operateTime=2025-07-22T16:43:23.541422900, info=新增员工Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白猫', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-22T16:43:23.535418200, updateTime=2025-07-22T16:43:23.535418200, deptName='null', exprList=[]})
+2025-07-22 16:43:23.552 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 16:43:23.552 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1617661119 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c]
+2025-07-22 16:43:23.578 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1617661119 wrapping com.mysql.cj.jdbc.ConnectionImpl@2bfeb95c] after transaction
+2025-07-22 16:43:23.579 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-07-22 16:43:23.579 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction rollback
+2025-07-22 16:43:23.579 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Rolling back JDBC transaction on Connection [HikariProxyConnection@1151587831 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70]
+2025-07-22 16:43:23.589 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1151587831 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] after transaction
+2025-07-22 16:43:23.590 [http-nio-8080-exec-10] ERROR c.k.t.exception.GlobalExceptionHandler-程序出错了喵~
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+### The error may exist in com/kei/tliaswebmanagement1/mapper/EmpMapper.java (best guess)
+### The error may involve com.kei.tliaswebmanagement1.mapper.EmpMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into emp (username, name, gender, phone, job, salary, image, entry_date, create_time, update_time, dept_id)                  values                 (?,?,?,?,?,?,?,?,?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+; Duplicate entry 'baibai' for key 'emp.username'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:254)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy98.insert(Unknown Source)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save(EmpServiceImpl.java:105)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl$$SpringCGLIB$$0.save(<generated>)
+	at com.kei.tliaswebmanagement1.controller.EmpController.save(EmpController.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'baibai' for key 'emp.username'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:382)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor79.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy130.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy129.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 78 common frames omitted
+2025-07-22 16:45:16.469 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:45:16.470 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:45:16.470 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:45:16.470 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:45:16.470 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:45:16.470 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:45:16.510 [http-nio-8080-exec-7] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 16:45:16.510 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:45:16.510 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 16:45:16.510 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 16:45:16.510 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 16:45:16.510 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 16:45:21.215 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：65
+2025-07-22 16:45:21.216 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:45:21.216 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:45:21.216 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:45:21.216 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:45:21.216 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：65
+2025-07-22 16:45:31.902 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-修改员工基本信息及其工作经历：Emp{id=65, username='0d000', password='krkrdkdk', name='绫地宁宁00', gender=2, phone='13307211234', job=1, salary=20, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/1214443e-2356-489f-892a-1774554494c7.jpg', entryDate=2025-07-18, deptId=7, createTime=2025-07-21T21:49:58, updateTime=2025-07-21T21:49:58, deptName='null', exprList=[EmpExpr(id=32, empId=65, begin=2025-07-15, end=2025-08-12, company=0d00, job=0d00)]}
+2025-07-22 16:45:31.920 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 16:45:31.921 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1877575010 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] for JDBC transaction
+2025-07-22 16:45:31.922 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1877575010 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] to manual commit
+2025-07-22 16:45:31.923 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:45:31.924 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:45:31.924 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:45:31.924 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：update
+2025-07-22 16:45:31.924 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=65, username='0d000', password='krkrdkdk', name='绫地宁宁00', gender=2, phone='13307211234', job=1, salary=20, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/1214443e-2356-489f-892a-1774554494c7.jpg', entryDate=2025-07-18, deptId=7, createTime=2025-07-21T21:49:58, updateTime=2025-07-21T21:49:58, deptName='null', exprList=[EmpExpr(id=32, empId=65, begin=2025-07-15, end=2025-08-12, company=0d00, job=0d00)]}
+2025-07-22 16:45:32.073 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 16:45:32.073 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1877575010 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70]
+2025-07-22 16:45:32.131 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1877575010 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] after transaction
+2025-07-22 16:45:32.166 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:45:32.167 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:45:32.167 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:45:32.167 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:45:32.167 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:45:32.167 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:45:44.486 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-根据id查询员工基本信息及其工作经历：66
+2025-07-22 16:45:44.486 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:45:44.487 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:45:44.487 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:45:44.487 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：getInfo
+2025-07-22 16:45:44.487 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：66
+2025-07-22 16:45:49.584 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-修改员工基本信息及其工作经历：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白喵', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:45:49.585 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 16:45:49.585 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@27702567 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] for JDBC transaction
+2025-07-22 16:45:49.585 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@27702567 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] to manual commit
+2025-07-22 16:45:49.587 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:45:49.587 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:45:49.588 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:45:49.588 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：update
+2025-07-22 16:45:49.588 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白喵', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-21T23:06:11, deptName='null', exprList=[]}
+2025-07-22 16:45:49.603 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 16:45:49.604 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@27702567 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70]
+2025-07-22 16:45:49.649 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@27702567 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] after transaction
+2025-07-22 16:45:49.683 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:45:49.684 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:45:49.684 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:45:49.684 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:45:49.684 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:45:49.684 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:54:13.669 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:54:13.677 [http-nio-8080-exec-9] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 16:54:13.695 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:54:13.695 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:54:13.696 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:54:13.696 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:54:13.696 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:54:13.695 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:54:13.697 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 16:54:13.697 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 16:54:13.697 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 16:54:13.697 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 16:59:21.263 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:59:21.264 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:59:21.264 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:59:21.264 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:59:21.265 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:59:21.265 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:59:21.275 [http-nio-8080-exec-7] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 16:59:21.275 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:59:21.275 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 16:59:21.275 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 16:59:21.275 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 16:59:21.275 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 16:59:27.715 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-删除员工信息：[62]
+2025-07-22 16:59:27.720 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 16:59:27.723 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1515206870 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] for JDBC transaction
+2025-07-22 16:59:27.723 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1515206870 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] to manual commit
+2025-07-22 16:59:27.891 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:59:27.892 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:59:27.893 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:59:27.893 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：delete
+2025-07-22 16:59:27.893 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：[62]
+2025-07-22 16:59:28.152 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 16:59:28.153 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1515206870 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70]
+2025-07-22 16:59:28.366 [http-nio-8080-exec-4] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1515206870 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] after transaction
+2025-07-22 16:59:28.437 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:59:28.438 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:59:28.438 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:59:28.438 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:59:28.438 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:59:28.438 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:59:37.720 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=2, pageSize=5)
+2025-07-22 16:59:37.721 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:59:37.722 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:59:37.722 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:59:37.722 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:59:37.722 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=2, pageSize=5)
+2025-07-22 16:59:50.368 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-删除员工信息：[55]
+2025-07-22 16:59:50.370 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 16:59:50.371 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@667083967 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] for JDBC transaction
+2025-07-22 16:59:50.371 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@667083967 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] to manual commit
+2025-07-22 16:59:50.373 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:59:50.373 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:59:50.373 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:59:50.374 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：delete
+2025-07-22 16:59:50.375 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：[55]
+2025-07-22 16:59:50.422 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 16:59:50.424 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@667083967 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70]
+2025-07-22 16:59:50.492 [http-nio-8080-exec-1] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@667083967 wrapping com.mysql.cj.jdbc.ConnectionImpl@c909c70] after transaction
+2025-07-22 16:59:50.618 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=2, pageSize=5)
+2025-07-22 16:59:50.619 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:59:50.619 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:59:50.619 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:59:50.621 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:59:50.621 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=2, pageSize=5)
+2025-07-22 16:59:51.940 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 16:59:51.940 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 16:59:51.940 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 16:59:51.940 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 16:59:51.940 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 16:59:51.940 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:25:00.623 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:25:00.640 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:25:00.641 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 17:25:00.642 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 17:25:00.642 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 17:25:00.642 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:25:00.655 [http-nio-8080-exec-10] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 17:25:00.655 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:25:00.655 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 17:25:00.656 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 17:25:00.656 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 17:25:00.656 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 17:25:10.482 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=2, pageSize=5)
+2025-07-22 17:25:10.483 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:25:10.483 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 17:25:10.483 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 17:25:10.483 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 17:25:10.483 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=2, pageSize=5)
+2025-07-22 17:25:14.321 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:25:14.322 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:25:14.322 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 17:25:14.322 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 17:25:14.322 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 17:25:14.322 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:38:51.123 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:38:51.147 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:38:51.147 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 17:38:51.147 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 17:38:51.147 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 17:38:51.147 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:38:51.147 [http-nio-8080-exec-4] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 17:38:51.147 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:38:51.148 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 17:38:51.148 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 17:38:51.148 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 17:38:51.148 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 17:39:01.116 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:39:01.116 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:39:01.116 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 17:39:01.116 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 17:39:01.116 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 17:39:01.116 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:39:01.133 [http-nio-8080-exec-1] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-22 17:39:01.133 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:39:01.133 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@72933b69
+2025-07-22 17:39:01.133 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-22 17:39:01.133 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-22 17:39:01.133 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-22 17:39:30.834 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-删除员工信息：[63]
+2025-07-22 17:39:30.839 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 17:39:30.840 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@108259448 wrapping com.mysql.cj.jdbc.ConnectionImpl@50d84a33] for JDBC transaction
+2025-07-22 17:39:30.841 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@108259448 wrapping com.mysql.cj.jdbc.ConnectionImpl@50d84a33] to manual commit
+2025-07-22 17:39:30.842 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:39:30.842 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 17:39:30.843 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 17:39:30.843 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：delete
+2025-07-22 17:39:30.843 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：[63]
+2025-07-22 17:39:31.236 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 17:39:31.236 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@108259448 wrapping com.mysql.cj.jdbc.ConnectionImpl@50d84a33]
+2025-07-22 17:39:31.485 [http-nio-8080-exec-5] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@108259448 wrapping com.mysql.cj.jdbc.ConnectionImpl@50d84a33] after transaction
+2025-07-22 17:39:31.529 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:39:31.530 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:39:31.530 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 17:39:31.530 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 17:39:31.530 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 17:39:31.530 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:39:40.898 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-删除员工信息：[61, 64]
+2025-07-22 17:39:40.898 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.delete]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-22 17:39:40.899 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1358735842 wrapping com.mysql.cj.jdbc.ConnectionImpl@50d84a33] for JDBC transaction
+2025-07-22 17:39:40.899 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1358735842 wrapping com.mysql.cj.jdbc.ConnectionImpl@50d84a33] to manual commit
+2025-07-22 17:39:40.900 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:39:40.900 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 17:39:40.900 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 17:39:40.900 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：delete
+2025-07-22 17:39:40.900 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：[61, 64]
+2025-07-22 17:39:40.941 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-22 17:39:40.942 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1358735842 wrapping com.mysql.cj.jdbc.ConnectionImpl@50d84a33]
+2025-07-22 17:39:40.995 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1358735842 wrapping com.mysql.cj.jdbc.ConnectionImpl@50d84a33] after transaction
+2025-07-22 17:39:41.050 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 17:39:41.050 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-22 17:39:41.051 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@f407514
+2025-07-22 17:39:41.051 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-22 17:39:41.051 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-22 17:39:41.051 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-22 20:25:43.046 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-22 20:25:45.222 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-07-22 20:25:45.320 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-07-22 20:25:45.359 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.

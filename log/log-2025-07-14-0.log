@@ -1,0 +1,28 @@
+2025-07-14 22:19:23.741 [main] INFO  c.k.t.TliasWebManagement1Application-Starting TliasWebManagement1Application using Java 17.0.14 with PID 10028 (F:\学习资料\编程\后端开发\kei\tlias-web-management1\target\classes started by hp in F:\学习资料\编程\后端开发\kei\tlias-web-management1)
+2025-07-14 22:19:23.744 [main] INFO  c.k.t.TliasWebManagement1Application-No active profile set, falling back to 1 default profile: "default"
+2025-07-14 22:19:26.371 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-07-14 22:19:26.389 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-14 22:19:26.391 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-07-14 22:19:26.392 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-14 22:19:26.480 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-07-14 22:19:26.481 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2675 ms
+2025-07-14 22:19:28.511 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2025-07-14 22:19:28.598 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-07-14 22:19:28.623 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-07-14 22:19:28.643 [main] INFO  c.k.t.TliasWebManagement1Application-Started TliasWebManagement1Application in 5.446 seconds (process running for 7.763)
+2025-07-14 22:19:29.043 [RMI TCP Connection(3)-192.168.100.73] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-14 22:19:29.044 [RMI TCP Connection(3)-192.168.100.73] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-07-14 22:19:29.047 [RMI TCP Connection(3)-192.168.100.73] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-07-14 22:19:29.050 [RMI TCP Connection(2)-192.168.100.73] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-07-14 22:19:30.833 [RMI TCP Connection(2)-192.168.100.73] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b281929
+2025-07-14 22:19:30.842 [RMI TCP Connection(2)-192.168.100.73] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-07-14 22:21:15.998 [http-nio-8080-exec-2] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-14 22:21:16.002 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-14 22:21:16.002 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@4a90311a
+2025-07-14 22:21:16.003 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-14 22:21:16.004 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-14 22:21:16.005 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-14 22:29:54.198 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-14 22:29:55.055 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-07-14 22:29:55.073 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-07-14 22:29:55.111 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.

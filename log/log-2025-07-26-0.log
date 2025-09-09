@@ -1,0 +1,682 @@
+2025-07-26 10:39:19.796 [main] INFO  c.k.t.TliasWebManagement1Application-Starting TliasWebManagement1Application using Java 17.0.14 with PID 17320 (F:\学习资料\编程\后端开发\kei\tlias-web-management1\target\classes started by hp in F:\学习资料\编程\后端开发\kei\tlias-web-management1)
+2025-07-26 10:39:19.799 [main] INFO  c.k.t.TliasWebManagement1Application-No active profile set, falling back to 1 default profile: "default"
+2025-07-26 10:39:22.538 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-07-26 10:39:22.551 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-26 10:39:22.553 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-07-26 10:39:22.628 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-26 10:39:22.704 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-07-26 10:39:22.705 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2858 ms
+2025-07-26 10:39:24.914 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2025-07-26 10:39:25.078 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-07-26 10:39:25.120 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-07-26 10:39:25.139 [main] INFO  c.k.t.TliasWebManagement1Application-Started TliasWebManagement1Application in 5.945 seconds (process running for 8.349)
+2025-07-26 10:39:25.878 [RMI TCP Connection(2)-192.168.3.75] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-26 10:39:25.879 [RMI TCP Connection(2)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-07-26 10:39:25.881 [RMI TCP Connection(2)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-07-26 10:39:25.884 [RMI TCP Connection(3)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-07-26 10:39:29.444 [RMI TCP Connection(3)-192.168.3.75] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@490e6e0c
+2025-07-26 10:39:29.452 [RMI TCP Connection(3)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-07-26 10:59:09.350 [http-nio-8080-exec-1] INFO  c.k.tliaswebmanagement1.controller.LoginController-员工登录：Emp{id=null, username='baibai', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 10:59:09.395 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 10:59:09.395 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 10:59:09.395 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 10:59:09.397 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：login
+2025-07-26 10:59:09.397 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='baibai', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 10:59:10.678 [http-nio-8080-exec-1] INFO  c.k.t.service.Impl.EmpServiceImpl-登录成功：Emp{id=66, username='baibai', password='krkrdkdk', name='百变白白喵', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11, updateTime=2025-07-22T16:45:50, deptName='null', exprList=null}
+2025-07-26 10:59:35.542 [http-nio-8080-exec-2] INFO  c.k.tliaswebmanagement1.controller.LoginController-员工登录：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 10:59:35.543 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 10:59:35.543 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 10:59:35.543 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 10:59:35.544 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：login
+2025-07-26 10:59:35.544 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 10:59:35.551 [http-nio-8080-exec-2] INFO  c.k.t.service.Impl.EmpServiceImpl-登录成功：Emp{id=1, username='Kasumi', password='krkrdkdk', name='户山 香澄', gender=2, phone='13600000001', job=1, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/0a52aa6d-7204-47c5-aeb8-62bad4a96111.jpeg', entryDate=2025-04-02, deptId=1, createTime=2025-04-02T20:41, updateTime=2025-07-23T16:17, deptName='null', exprList=null}
+2025-07-26 10:59:48.685 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 10:59:48.686 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 10:59:48.687 [http-nio-8080-exec-3] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-26 10:59:48.687 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 10:59:48.687 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@6a4528de
+2025-07-26 10:59:48.687 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-26 10:59:48.688 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-26 10:59:48.688 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 10:59:48.753 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 10:59:50.954 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 10:59:50.954 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 10:59:50.957 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 10:59:50.957 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 10:59:50.958 [http-nio-8080-exec-5] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-26 10:59:50.958 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 10:59:50.958 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@6a4528de
+2025-07-26 10:59:50.958 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-26 10:59:50.958 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-26 10:59:50.958 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 10:59:50.995 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 10:59:50.999 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-26 10:59:51.002 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 10:59:51.003 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 10:59:51.004 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 10:59:51.004 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-26 10:59:51.005 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-26 10:59:51.316 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 11:01:34.020 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-token为空，返回错误信息
+2025-07-26 11:01:38.047 [http-nio-8080-exec-7] INFO  c.k.tliaswebmanagement1.controller.LoginController-员工登录：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:01:38.048 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 11:01:38.048 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 11:01:38.048 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 11:01:38.049 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：login
+2025-07-26 11:01:38.049 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:01:38.058 [http-nio-8080-exec-7] INFO  c.k.t.service.Impl.EmpServiceImpl-登录成功：Emp{id=1, username='Kasumi', password='krkrdkdk', name='户山 香澄', gender=2, phone='13600000001', job=1, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/0a52aa6d-7204-47c5-aeb8-62bad4a96111.jpeg', entryDate=2025-04-02, deptId=1, createTime=2025-04-02T20:41, updateTime=2025-07-23T16:17, deptName='null', exprList=null}
+2025-07-26 11:06:10.248 [http-nio-8080-exec-8] INFO  c.k.tliaswebmanagement1.controller.LoginController-员工登录：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:06:10.249 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 11:06:10.249 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 11:06:10.249 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 11:06:10.250 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：login
+2025-07-26 11:06:10.250 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:06:10.285 [http-nio-8080-exec-8] INFO  c.k.t.service.Impl.EmpServiceImpl-登录成功：Emp{id=1, username='Kasumi', password='krkrdkdk', name='户山 香澄', gender=2, phone='13600000001', job=1, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/0a52aa6d-7204-47c5-aeb8-62bad4a96111.jpeg', entryDate=2025-04-02, deptId=1, createTime=2025-04-02T20:41, updateTime=2025-07-23T16:17, deptName='null', exprList=null}
+2025-07-26 11:15:12.120 [http-nio-8080-exec-9] INFO  c.k.tliaswebmanagement1.controller.LoginController-员工登录：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:15:12.120 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 11:15:12.121 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 11:15:12.121 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 11:15:12.121 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：login
+2025-07-26 11:15:12.121 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:15:12.129 [http-nio-8080-exec-9] INFO  c.k.t.service.Impl.EmpServiceImpl-登录成功：Emp{id=1, username='Kasumi', password='krkrdkdk', name='户山 香澄', gender=2, phone='13600000001', job=1, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/0a52aa6d-7204-47c5-aeb8-62bad4a96111.jpeg', entryDate=2025-04-02, deptId=1, createTime=2025-04-02T20:41, updateTime=2025-07-23T16:17, deptName='null', exprList=null}
+2025-07-26 11:15:35.060 [http-nio-8080-exec-10] INFO  c.k.tliaswebmanagement1.controller.LoginController-员工登录：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:15:35.061 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 11:15:35.061 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 11:15:35.061 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 11:15:35.061 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：login
+2025-07-26 11:15:35.061 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:15:35.068 [http-nio-8080-exec-10] INFO  c.k.t.service.Impl.EmpServiceImpl-登录成功：Emp{id=1, username='Kasumi', password='krkrdkdk', name='户山 香澄', gender=2, phone='13600000001', job=1, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/0a52aa6d-7204-47c5-aeb8-62bad4a96111.jpeg', entryDate=2025-04-02, deptId=1, createTime=2025-04-02T20:41, updateTime=2025-07-23T16:17, deptName='null', exprList=null}
+2025-07-26 11:34:05.336 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-token为空，返回错误信息
+2025-07-26 11:49:30.571 [http-nio-8080-exec-3] INFO  c.k.tliaswebmanagement1.controller.LoginController-员工登录：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:49:30.574 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 11:49:30.574 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 11:49:30.574 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 11:49:30.575 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：login
+2025-07-26 11:49:30.575 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 11:49:30.600 [http-nio-8080-exec-3] INFO  c.k.t.service.Impl.EmpServiceImpl-登录成功：Emp{id=1, username='Kasumi', password='krkrdkdk', name='户山 香澄', gender=2, phone='13600000001', job=1, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/0a52aa6d-7204-47c5-aeb8-62bad4a96111.jpeg', entryDate=2025-04-02, deptId=1, createTime=2025-04-02T20:41, updateTime=2025-07-23T16:17, deptName='null', exprList=null}
+2025-07-26 11:49:35.273 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 11:49:35.273 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 11:49:35.274 [http-nio-8080-exec-5] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-26 11:49:35.275 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 11:49:35.275 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@6a4528de
+2025-07-26 11:49:35.275 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-26 11:49:35.275 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-26 11:49:35.275 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 11:49:35.297 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 11:49:37.670 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 11:49:37.670 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 11:49:37.671 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 11:49:37.671 [http-nio-8080-exec-4] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-26 11:49:37.671 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 11:49:37.671 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 11:49:37.671 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@6a4528de
+2025-07-26 11:49:37.671 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-26 11:49:37.673 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-26 11:49:37.673 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 11:49:37.680 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-26 11:49:37.681 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 11:49:37.681 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 11:49:37.681 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 11:49:37.681 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-26 11:49:37.681 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-26 11:49:37.688 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 11:49:37.788 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:27:44.024 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:27:44.058 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:27:44.061 [http-nio-8080-exec-7] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-26 13:27:44.063 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:27:44.065 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@6a4528de
+2025-07-26 13:27:44.066 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-26 13:27:44.066 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-26 13:27:44.066 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:27:44.284 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:28:02.812 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:28:02.813 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:28:02.814 [http-nio-8080-exec-8] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-26 13:28:02.814 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:28:02.814 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@6a4528de
+2025-07-26 13:28:02.815 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-26 13:28:02.815 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-26 13:28:02.815 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:28:02.827 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:30:58.286 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:30:58.286 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:30:58.305 [http-nio-8080-exec-9] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:30:58.315 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:30:58.316 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:30:58.316 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:30:58.316 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:30:58.317 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:30:58.461 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:32:18.374 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:32:18.374 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:32:18.375 [http-nio-8080-exec-10] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:32:18.376 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:32:18.376 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:32:18.376 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:32:18.376 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:32:18.376 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:32:18.445 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:32:30.333 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:32:30.333 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:32:30.334 [http-nio-8080-exec-1] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:32:30.334 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:32:30.334 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:32:30.334 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:32:30.334 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:32:30.334 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:32:30.352 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:33:16.261 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:33:16.261 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:33:16.261 [http-nio-8080-exec-2] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:33:16.262 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:33:16.262 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:33:16.262 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:33:16.262 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:33:16.262 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:33:16.269 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:34:28.324 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:34:28.325 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:34:28.325 [http-nio-8080-exec-3] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:34:28.326 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:34:28.326 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:34:28.327 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:34:28.328 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:34:28.329 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:34:28.343 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:37:30.233 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:37:30.234 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:37:30.234 [http-nio-8080-exec-5] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:37:30.234 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:37:30.234 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:37:30.234 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:37:30.234 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:37:30.234 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:37:30.243 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:40:45.220 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:40:45.221 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:40:45.221 [http-nio-8080-exec-4] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:40:45.221 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:40:45.221 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:40:45.221 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:40:45.221 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:40:45.222 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:40:45.229 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:54:16.855 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:54:16.855 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:54:16.856 [http-nio-8080-exec-6] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:54:16.856 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:54:16.856 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:54:16.857 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:54:16.857 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:54:16.857 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:54:16.877 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:58:04.179 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:58:04.179 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:58:04.180 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 13:58:04.183 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:58:04.183 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 13:58:04.183 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 13:58:04.184 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 13:58:04.184 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:58:04.185 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:58:04.185 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:58:04.186 [http-nio-8080-exec-8] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:58:04.186 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:58:04.186 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:58:04.187 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:58:04.187 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:58:04.187 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:58:04.196 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:58:04.246 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:58:10.109 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:58:10.109 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:58:10.109 [http-nio-8080-exec-9] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:58:10.110 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:58:10.110 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:58:10.110 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:58:10.110 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:58:10.110 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:58:10.112 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:58:10.113 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:58:10.113 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 13:58:10.113 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:58:10.113 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 13:58:10.113 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 13:58:10.114 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 13:58:10.115 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:58:10.122 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:58:10.136 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:58:17.598 [http-nio-8080-exec-1] INFO  c.k.tliaswebmanagement1.controller.LoginController-员工登录：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 13:58:17.600 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:58:17.600 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 13:58:17.600 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 13:58:17.600 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：login
+2025-07-26 13:58:17.602 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='Kasumi', password='krkrdkdk', name='null', gender=null, phone='null', job=null, salary=null, image='null', entryDate=null, deptId=null, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-26 13:58:17.854 [http-nio-8080-exec-1] INFO  c.k.t.service.Impl.EmpServiceImpl-登录成功：Emp{id=1, username='Kasumi', password='krkrdkdk', name='户山 香澄', gender=2, phone='13600000001', job=1, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/0a52aa6d-7204-47c5-aeb8-62bad4a96111.jpeg', entryDate=2025-04-02, deptId=1, createTime=2025-04-02T20:41, updateTime=2025-07-23T16:17, deptName='null', exprList=null}
+2025-07-26 13:58:24.972 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:58:24.972 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:58:24.973 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:58:24.973 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:58:24.974 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 13:58:24.974 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:58:24.974 [http-nio-8080-exec-2] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:58:24.974 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 13:58:24.974 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 13:58:24.974 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:58:24.974 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 13:58:24.975 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:58:24.975 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:58:24.975 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:58:24.975 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:58:24.975 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:58:25.056 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:58:25.066 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:59:14.885 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:59:14.886 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:59:14.886 [http-nio-8080-exec-5] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:59:14.886 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:59:14.886 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:59:14.886 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:59:14.886 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:59:14.887 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 13:59:14.887 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:59:14.887 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:59:14.887 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:59:14.888 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:59:14.887 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 13:59:14.888 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 13:59:14.888 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 13:59:14.888 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:59:14.894 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:59:14.906 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:59:43.153 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:59:43.153 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:59:43.154 [http-nio-8080-exec-6] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 13:59:43.154 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:59:43.154 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 13:59:43.154 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 13:59:43.154 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 13:59:43.154 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:59:43.159 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 13:59:43.187 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 13:59:43.187 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 13:59:43.187 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 13:59:43.188 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 13:59:43.188 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 13:59:43.188 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 13:59:43.188 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 13:59:43.188 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 13:59:43.199 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:02:45.125 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:02:45.125 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:02:45.125 [http-nio-8080-exec-7] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:02:45.125 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:02:45.125 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:02:45.125 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:02:45.125 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:02:45.125 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:02:45.131 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:02:45.140 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:02:45.140 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:02:45.140 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:02:45.140 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:02:45.140 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:02:45.140 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:02:45.140 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:02:45.140 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:02:45.155 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:03:12.623 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:03:12.623 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:03:12.623 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:03:12.623 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:03:12.624 [http-nio-8080-exec-10] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:03:12.624 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:03:12.624 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:03:12.624 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:03:12.624 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:03:12.624 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:03:12.624 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:03:12.624 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:03:12.624 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:03:12.624 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:03:12.624 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:03:12.624 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:03:12.634 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:03:12.648 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:04:00.177 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:04:00.177 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:04:00.183 [http-nio-8080-exec-2] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:04:00.183 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:04:00.183 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:04:00.183 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:04:00.183 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:04:00.183 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:04:00.186 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:04:00.186 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:04:00.187 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:04:00.187 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:04:00.187 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:04:00.187 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:04:00.187 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:04:00.187 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:04:00.194 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:04:00.201 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:21:22.608 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:21:22.611 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:21:22.608 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:21:22.611 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:21:22.613 [http-nio-8080-exec-4] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:21:22.613 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:21:22.614 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:21:22.614 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:21:22.614 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:21:22.615 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:21:22.614 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:21:22.615 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:21:22.615 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:21:22.615 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:21:22.615 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:21:22.615 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:21:22.645 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:21:22.651 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:22:40.412 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:22:40.412 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:22:40.412 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:22:40.412 [http-nio-8080-exec-6] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:22:40.412 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:22:40.412 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:22:40.412 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:22:40.412 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:22:40.412 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:22:40.412 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:22:40.412 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:22:40.412 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:22:40.413 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:22:40.413 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:22:40.413 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:22:40.413 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:22:40.422 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:22:40.430 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:23:18.185 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:23:18.186 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:23:18.186 [http-nio-8080-exec-7] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:23:18.186 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:23:18.186 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:23:18.186 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:23:18.186 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:23:18.186 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:23:18.202 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:23:18.206 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:23:18.207 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:23:18.207 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:23:18.207 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:23:18.207 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:23:18.207 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:23:18.207 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:23:18.207 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:23:18.221 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:24:50.039 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:24:50.039 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:24:50.039 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:24:50.039 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:24:50.039 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:24:50.040 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:24:50.040 [http-nio-8080-exec-10] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:24:50.040 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:24:50.040 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:24:50.040 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:24:50.040 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:24:50.040 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:24:50.040 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:24:50.040 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:24:50.040 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:24:50.040 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:24:50.050 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:24:50.057 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:25:02.993 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:25:02.993 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:25:02.993 [http-nio-8080-exec-2] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:25:02.993 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:25:02.993 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:25:02.993 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:25:02.993 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:25:02.993 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:25:03.000 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:25:03.001 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:25:03.001 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:25:03.001 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:25:03.001 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:25:03.001 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:25:03.001 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:25:03.001 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:25:03.002 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:25:03.020 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:25:15.867 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:25:15.867 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:25:15.867 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:25:15.867 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:25:15.867 [http-nio-8080-exec-4] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:25:15.867 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:25:15.867 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:25:15.867 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:25:15.867 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:25:15.867 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:25:15.867 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:25:15.867 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:25:15.867 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:25:15.869 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:25:15.876 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:25:15.876 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:25:15.881 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:25:15.896 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:25:40.656 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:25:40.655 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:25:40.656 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:25:40.656 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:25:40.656 [http-nio-8080-exec-6] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:25:40.656 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:25:40.656 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:25:40.657 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:25:40.657 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:25:40.657 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:25:40.657 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:25:40.657 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:25:40.657 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:25:40.657 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:25:40.657 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:25:40.657 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:25:40.665 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:25:40.674 [http-nio-8080-exec-8] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:25:58.657 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:25:58.658 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:25:58.658 [http-nio-8080-exec-7] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:25:58.658 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:25:58.658 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:25:58.658 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:25:58.658 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:25:58.658 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:25:58.669 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:25:58.669 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:25:58.673 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:25:58.673 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:25:58.673 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:25:58.673 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:25:58.673 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:25:58.673 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:25:58.674 [http-nio-8080-exec-7] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:25:58.698 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:26:11.922 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:26:11.923 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:26:11.923 [http-nio-8080-exec-10] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:26:11.924 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:26:11.924 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:26:11.924 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:26:11.924 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:26:11.924 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:26:11.929 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:26:11.929 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:26:11.929 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:26:11.929 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:26:11.929 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:26:11.930 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:26:11.930 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:26:11.930 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:26:11.932 [http-nio-8080-exec-10] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:26:11.945 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:26:20.218 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:26:20.218 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:26:20.218 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:26:20.218 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:26:20.218 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:26:20.218 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:26:20.218 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:26:20.218 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:26:20.218 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:26:20.218 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:26:20.218 [http-nio-8080-exec-2] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:26:20.218 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:26:20.218 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:26:20.226 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:26:20.226 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:26:20.226 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:26:20.231 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:26:20.237 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:30:45.673 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:30:45.673 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:30:45.673 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:30:45.673 [http-nio-8080-exec-4] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:30:45.673 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:30:45.674 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:30:45.674 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@39b8b238
+2025-07-26 14:30:45.674 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:30:45.674 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:30:45.674 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:30:45.674 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:30:45.674 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:30:45.674 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@1ac26acf
+2025-07-26 14:30:45.674 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:30:45.675 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:30:45.675 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:30:45.683 [http-nio-8080-exec-4] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:30:45.690 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:38:50.561 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-26 14:38:51.286 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-07-26 14:38:51.365 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-07-26 14:38:51.387 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-07-26 14:38:57.522 [main] INFO  c.k.t.TliasWebManagement1Application-Starting TliasWebManagement1Application using Java 17.0.14 with PID 41068 (F:\学习资料\编程\后端开发\kei\tlias-web-management1\target\classes started by hp in F:\学习资料\编程\后端开发\kei\tlias-web-management1)
+2025-07-26 14:38:57.526 [main] INFO  c.k.t.TliasWebManagement1Application-No active profile set, falling back to 1 default profile: "default"
+2025-07-26 14:39:00.155 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-07-26 14:39:00.171 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-26 14:39:00.173 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-07-26 14:39:00.174 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-26 14:39:00.269 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-07-26 14:39:00.269 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2695 ms
+2025-07-26 14:39:02.241 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2025-07-26 14:39:02.307 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-07-26 14:39:02.332 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-07-26 14:39:02.355 [main] INFO  c.k.t.TliasWebManagement1Application-Started TliasWebManagement1Application in 5.302 seconds (process running for 6.496)
+2025-07-26 14:39:02.660 [RMI TCP Connection(2)-192.168.3.75] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-26 14:39:02.660 [RMI TCP Connection(2)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-07-26 14:39:02.662 [RMI TCP Connection(2)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-07-26 14:39:02.663 [RMI TCP Connection(3)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-07-26 14:39:03.053 [RMI TCP Connection(3)-192.168.3.75] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27f3a71a
+2025-07-26 14:39:03.065 [RMI TCP Connection(3)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-07-26 14:39:16.041 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:39:16.042 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:39:16.042 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:39:16.042 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:39:16.055 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:39:16.055 [http-nio-8080-exec-3] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:39:16.058 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:39:16.058 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:39:16.058 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@1393e4e8
+2025-07-26 14:39:16.058 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@3f21211
+2025-07-26 14:39:16.058 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:39:16.058 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:39:16.060 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:39:16.060 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:39:16.060 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:39:16.060 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:39:16.211 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:39:16.215 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:41:51.878 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-26 14:41:52.524 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-07-26 14:41:52.533 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-07-26 14:41:52.543 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2025-07-26 14:41:57.011 [main] INFO  c.k.t.TliasWebManagement1Application-Starting TliasWebManagement1Application using Java 17.0.14 with PID 32260 (F:\学习资料\编程\后端开发\kei\tlias-web-management1\target\classes started by hp in F:\学习资料\编程\后端开发\kei\tlias-web-management1)
+2025-07-26 14:41:57.014 [main] INFO  c.k.t.TliasWebManagement1Application-No active profile set, falling back to 1 default profile: "default"
+2025-07-26 14:41:58.885 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-07-26 14:41:58.903 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-26 14:41:58.906 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-07-26 14:41:58.906 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-26 14:41:58.979 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-07-26 14:41:58.979 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1920 ms
+2025-07-26 14:42:00.858 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2025-07-26 14:42:00.942 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-07-26 14:42:00.979 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-07-26 14:42:00.995 [main] INFO  c.k.t.TliasWebManagement1Application-Started TliasWebManagement1Application in 4.414 seconds (process running for 5.232)
+2025-07-26 14:42:01.660 [RMI TCP Connection(1)-192.168.3.75] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-26 14:42:01.661 [RMI TCP Connection(1)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-07-26 14:42:01.663 [RMI TCP Connection(1)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2025-07-26 14:42:01.666 [RMI TCP Connection(2)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-07-26 14:42:01.954 [RMI TCP Connection(2)-192.168.3.75] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5967a6f1
+2025-07-26 14:42:01.966 [RMI TCP Connection(2)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-07-26 14:42:06.557 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:42:06.558 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:42:06.561 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:42:06.562 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:42:06.586 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:42:06.586 [http-nio-8080-exec-2] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:42:06.593 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:42:06.593 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:42:06.593 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@991c9d7
+2025-07-26 14:42:06.593 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@36846416
+2025-07-26 14:42:06.593 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:42:06.593 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:42:06.596 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:42:06.596 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:42:06.596 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:42:06.596 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:42:06.826 [http-nio-8080-exec-2] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:42:06.831 [http-nio-8080-exec-1] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:44:00.213 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:44:00.213 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:44:00.214 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:44:00.214 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:44:00.214 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:44:00.214 [http-nio-8080-exec-3] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:44:00.214 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:44:00.214 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:44:00.214 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@36846416
+2025-07-26 14:44:00.214 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@991c9d7
+2025-07-26 14:44:00.214 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:44:00.215 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:44:00.215 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:44:00.215 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:44:00.215 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:44:00.216 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:44:00.247 [http-nio-8080-exec-9] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:44:00.252 [http-nio-8080-exec-3] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:50:34.207 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:50:34.207 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-当前用户id为：1，并存入ThreadLocal
+2025-07-26 14:50:34.207 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:50:34.208 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-token校验成功，放行~
+2025-07-26 14:50:34.208 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-查询所有员工
+2025-07-26 14:50:34.208 [http-nio-8080-exec-5] INFO  c.k.t.controller.ClazzsController-查询所有班级
+2025-07-26 14:50:34.208 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:50:34.208 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-26 14:50:34.208 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@991c9d7
+2025-07-26 14:50:34.208 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl@36846416
+2025-07-26 14:50:34.208 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.ClazzsServiceImpl
+2025-07-26 14:50:34.208 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-26 14:50:34.209 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：list
+2025-07-26 14:50:34.209 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：listAll
+2025-07-26 14:50:34.209 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:50:34.209 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-26 14:50:34.223 [http-nio-8080-exec-5] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:50:34.243 [http-nio-8080-exec-6] INFO  c.k.t.interceptor.TokenInterceptor-null
+2025-07-26 14:50:54.713 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-26 14:50:55.973 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-07-26 14:50:55.979 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-07-26 14:50:55.991 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.

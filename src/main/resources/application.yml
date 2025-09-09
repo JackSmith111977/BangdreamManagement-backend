@@ -1,0 +1,40 @@
+# 配置数据库的连接信息
+spring:
+  application:
+    name: tlias-web-management
+  datasource:
+    url: jdbc:mysql://mysql:3306/tlias
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 114514
+# 配置文件上传的最大限制
+  servlet:
+    multipart:
+      # 最大单个文件大小
+      max-file-size: 50MB
+      # 最大请求大小（包括所有表单数据和文件）
+      max-request-size: 500MB
+
+# 配置mybatis日志输出
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 开启驼峰映射
+    map-underscore-to-camel-case: true
+
+# 配置日志信息，查看spring事务管理的底层日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+
+# 配置阿里云 OSS属性参数
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    bucketName: kei-web
+    region: cn-beijing
+
+# 配置文件的优先级：命令行属性>Java系统属性>properties>yml>yaml
+# 配置端口号：server.port: 8080
+# Java系统属性：-D...  如：-Dserver.port：9000
+# 命令行参数：--... 如：--server.port=9000

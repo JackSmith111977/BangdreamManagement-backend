@@ -1,0 +1,642 @@
+2025-07-21 20:59:37.205 [main] INFO  c.k.t.TliasWebManagement1Application-Starting TliasWebManagement1Application using Java 17.0.14 with PID 27000 (F:\学习资料\编程\后端开发\kei\tlias-web-management1\target\classes started by hp in F:\学习资料\编程\后端开发\kei\tlias-web-management1)
+2025-07-21 20:59:37.208 [main] INFO  c.k.t.TliasWebManagement1Application-No active profile set, falling back to 1 default profile: "default"
+2025-07-21 20:59:39.693 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat initialized with port 8080 (http)
+2025-07-21 20:59:39.708 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-21 20:59:39.711 [main] INFO  org.apache.catalina.core.StandardService-Starting service [Tomcat]
+2025-07-21 20:59:39.712 [main] INFO  org.apache.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-21 20:59:39.796 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2025-07-21 20:59:39.797 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 2539 ms
+2025-07-21 20:59:41.721 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver-Exposing 1 endpoint beneath base path '/actuator'
+2025-07-21 20:59:41.802 [main] INFO  org.apache.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2025-07-21 20:59:41.828 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer-Tomcat started on port 8080 (http) with context path '/'
+2025-07-21 20:59:41.844 [main] INFO  c.k.t.TliasWebManagement1Application-Started TliasWebManagement1Application in 5.203 seconds (process running for 7.241)
+2025-07-21 20:59:42.269 [RMI TCP Connection(3)-192.168.3.75] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-21 20:59:42.269 [RMI TCP Connection(3)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2025-07-21 20:59:42.271 [RMI TCP Connection(3)-192.168.3.75] INFO  org.springframework.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2025-07-21 20:59:42.271 [RMI TCP Connection(2)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2025-07-21 20:59:43.735 [RMI TCP Connection(2)-192.168.3.75] INFO  com.zaxxer.hikari.pool.HikariPool-HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@106bb409
+2025-07-21 20:59:43.758 [RMI TCP Connection(2)-192.168.3.75] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2025-07-21 21:13:23.271 [http-nio-8080-exec-1] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:13:23.273 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:13:23.274 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:13:23.274 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:13:23.277 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:13:23.277 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:13:23.305 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:13:23.306 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:13:23.306 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:13:23.306 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:13:23.306 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:13:23.307 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:18:09.413 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：QQ图片20250629143352.jpg
+2025-07-21 21:18:19.400 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/8b8a0679-dd58-487c-b9b6-a46c4f1f15ac.jpg
+2025-07-21 21:18:41.527 [http-nio-8080-exec-4] INFO  c.k.tliaswebmanagement1.controller.DeptController-新增乐队：白
+2025-07-21 21:18:41.527 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:18:41.528 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:18:41.528 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:18:41.528 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：add
+2025-07-21 21:18:41.528 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Dept(id=null, name=白, createTime=null, updateTime=null)
+2025-07-21 21:18:41.969 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.OperateLogAspect-operateLog:OperateLog{id=null, operateEmpId=null, operateTime=2025-07-21T21:18:41.968157500, className='com.kei.tliaswebmanagement1.controller.DeptController', methodName='add', methodParams='[Ljava.lang.Object;@6aeaa385', returnValue='Result(code=1, msg=success, data=null)', costTime=441}
+2025-07-21 21:19:39.573 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:19:39.573 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:19:39.573 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:19:39.573 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:19:39.573 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:19:39.573 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:19:39.575 [http-nio-8080-exec-6] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:19:39.575 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:19:39.575 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:19:39.575 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:19:39.575 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:19:39.575 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:21:38.326 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：QQ图片20250402130229.jpg
+2025-07-21 21:21:38.738 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/a9bb2c6b-e7ef-429b-b20c-d297f0c29786.jpg
+2025-07-21 21:21:58.850 [http-nio-8080-exec-9] INFO  c.k.tliaswebmanagement1.controller.DeptController-新增乐队：like
+2025-07-21 21:21:58.851 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:21:58.851 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:21:58.852 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:21:58.852 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：add
+2025-07-21 21:21:58.853 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Dept(id=null, name=like, createTime=null, updateTime=null)
+2025-07-21 21:21:58.909 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.OperateLogAspect-operateLog:OperateLog{id=null, operateEmpId=null, operateTime=2025-07-21T21:21:58.909941500, className='com.kei.tliaswebmanagement1.controller.DeptController', methodName='add', methodParams='[Ljava.lang.Object;@15342f8b', returnValue='Result(code=1, msg=success, data=null)', costTime=59}
+2025-07-21 21:21:58.948 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:21:58.948 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:21:58.948 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:21:58.948 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:21:58.948 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:21:58.949 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:22:06.045 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:22:06.046 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:22:06.047 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:22:06.047 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:22:06.047 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:22:06.047 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:22:10.180 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=10, pageSize=5)
+2025-07-21 21:22:10.181 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:22:10.181 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:22:10.181 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:22:10.181 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:22:10.181 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=10, pageSize=5)
+2025-07-21 21:22:12.475 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:22:12.475 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:22:12.475 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:22:12.476 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:22:12.476 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:22:12.477 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:22:37.473 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=6, pageSize=5)
+2025-07-21 21:22:37.474 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:22:37.474 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:22:37.474 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:22:37.474 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:22:37.474 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=6, pageSize=5)
+2025-07-21 21:22:40.614 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=7, pageSize=5)
+2025-07-21 21:22:40.615 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:22:40.615 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:22:40.615 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:22:40.615 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:22:40.615 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=7, pageSize=5)
+2025-07-21 21:22:41.779 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=8, pageSize=5)
+2025-07-21 21:22:41.780 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:22:41.780 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:22:41.781 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:22:41.781 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:22:41.781 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=8, pageSize=5)
+2025-07-21 21:22:43.491 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=9, pageSize=5)
+2025-07-21 21:22:43.491 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:22:43.491 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:22:43.491 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:22:43.491 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:22:43.492 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=9, pageSize=5)
+2025-07-21 21:22:46.787 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=9, pageSize=50)
+2025-07-21 21:22:46.787 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=50)
+2025-07-21 21:22:46.787 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:22:46.787 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:22:46.787 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:22:46.787 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:22:46.787 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=9, pageSize=50)
+2025-07-21 21:22:46.787 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:22:46.787 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:22:46.788 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:22:46.788 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:22:46.788 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=50)
+2025-07-21 21:24:34.419 [http-nio-8080-exec-10] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:24:34.419 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:24:34.419 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:24:34.419 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:24:34.419 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:24:34.419 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:24:34.419 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:24:34.419 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:24:34.419 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:24:34.420 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:24:34.420 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:24:34.420 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:27:21.908 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=10, pageSize=5)
+2025-07-21 21:27:21.908 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:27:21.909 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:27:21.909 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:27:21.909 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:27:21.909 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=10, pageSize=5)
+2025-07-21 21:27:23.353 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=9, pageSize=5)
+2025-07-21 21:27:23.353 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:27:23.353 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:27:23.353 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:27:23.353 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:27:23.353 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=9, pageSize=5)
+2025-07-21 21:27:25.105 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:27:25.106 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:27:25.106 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:27:25.106 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:27:25.106 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:27:25.107 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:29:23.055 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:29:23.056 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:29:23.056 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:29:23.056 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:29:23.056 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:29:23.056 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:29:23.058 [http-nio-8080-exec-6] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:29:23.058 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:29:23.058 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:29:23.058 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:29:23.058 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:29:23.058 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:30:33.042 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：QQ图片20250408162850.jpg
+2025-07-21 21:30:33.497 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/7e136e21-71b3-4aa6-a70d-8084e03c7bb1.jpg
+2025-07-21 21:30:34.906 [http-nio-8080-exec-7] INFO  c.k.tliaswebmanagement1.controller.DeptController-新增乐队：白
+2025-07-21 21:30:34.907 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:30:34.907 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:30:34.907 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:30:34.907 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：add
+2025-07-21 21:30:34.907 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Dept(id=null, name=白, createTime=null, updateTime=null)
+2025-07-21 21:30:35.623 [http-nio-8080-exec-7] ERROR c.k.t.exception.GlobalExceptionHandler-程序出错了喵~
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '白' for key 'dept.name'
+### The error may exist in com/kei/tliaswebmanagement1/mapper/DeptMapper.java (best guess)
+### The error may involve com.kei.tliaswebmanagement1.mapper.DeptMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into dept (name, create_time, update_time) values (?,?,?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '白' for key 'dept.name'
+; Duplicate entry '白' for key 'dept.name'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:254)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:93)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:347)
+	at jdk.proxy2/jdk.proxy2.$Proxy85.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy105.insert(Unknown Source)
+	at com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl.add(DeptServiceImpl.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl$$SpringCGLIB$$0.add(<generated>)
+	at com.kei.tliaswebmanagement1.controller.DeptController.add(DeptController.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at com.kei.tliaswebmanagement1.aop.OperateLogAspect.operateLog(OperateLogAspect.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:642)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:632)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:173)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.kei.tliaswebmanagement1.controller.DeptController$$SpringCGLIB$$0.add(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '白' for key 'dept.name'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:109)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:988)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:382)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor78.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy130.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy128.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:333)
+	... 96 common frames omitted
+2025-07-21 21:31:37.689 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:31:37.689 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:31:37.689 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:31:37.689 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:31:37.689 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:31:37.689 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:31:37.691 [http-nio-8080-exec-10] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:31:37.691 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:31:37.691 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:31:37.691 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:31:37.691 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:31:37.691 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:34:07.086 [http-nio-8080-exec-8] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:34:07.087 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:34:07.087 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:34:07.087 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:34:07.087 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:34:07.087 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:34:14.899 [http-nio-8080-exec-1] INFO  c.k.tliaswebmanagement1.controller.DeptController-根据id删除乐队数据：30
+2025-07-21 21:34:14.899 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:34:14.899 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:34:14.899 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:34:14.900 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：deleteById
+2025-07-21 21:34:14.900 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：30
+2025-07-21 21:34:15.139 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.OperateLogAspect-operateLog:OperateLog{id=null, operateEmpId=null, operateTime=2025-07-21T21:34:15.139969100, className='com.kei.tliaswebmanagement1.controller.DeptController', methodName='deleteById', methodParams='[Ljava.lang.Object;@3db178bc', returnValue='Result(code=1, msg=success, data=null)', costTime=240}
+2025-07-21 21:34:15.312 [http-nio-8080-exec-3] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:34:15.312 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:34:15.312 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:34:15.312 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:34:15.312 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:34:15.312 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:34:18.420 [http-nio-8080-exec-2] INFO  c.k.tliaswebmanagement1.controller.DeptController-根据id删除乐队数据：29
+2025-07-21 21:34:18.420 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:34:18.420 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:34:18.420 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:34:18.420 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：deleteById
+2025-07-21 21:34:18.420 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：29
+2025-07-21 21:34:18.476 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.OperateLogAspect-operateLog:OperateLog{id=null, operateEmpId=null, operateTime=2025-07-21T21:34:18.476628500, className='com.kei.tliaswebmanagement1.controller.DeptController', methodName='deleteById', methodParams='[Ljava.lang.Object;@2fee32da', returnValue='Result(code=1, msg=success, data=null)', costTime=56}
+2025-07-21 21:34:18.553 [http-nio-8080-exec-6] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:34:18.554 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:34:18.554 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:34:18.554 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:34:18.554 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:34:18.554 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:34:22.100 [http-nio-8080-exec-4] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:34:22.099 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:34:22.100 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:34:22.100 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:34:22.100 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:34:22.100 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:34:22.100 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:34:22.100 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:34:22.100 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:34:22.100 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:34:22.101 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:34:22.101 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:35:02.975 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：QQ图片20250408162850.jpg
+2025-07-21 21:35:03.332 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/aa027ee4-8160-4df3-b296-1427cd200c3d.jpg
+2025-07-21 21:35:28.621 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-新增员工信息：Emp{id=null, username='white', password='null', name='白', gender=2, phone='13607210721', job=6, salary=0, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/aa027ee4-8160-4df3-b296-1427cd200c3d.jpg', entryDate=2025-07-01, deptId=13, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-21 21:35:28.638 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-21 21:35:28.640 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@89922660 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065] for JDBC transaction
+2025-07-21 21:35:28.645 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@89922660 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065] to manual commit
+2025-07-21 21:35:28.647 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:35:28.648 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:35:28.648 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:35:28.648 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：save
+2025-07-21 21:35:28.648 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='white', password='null', name='白', gender=2, phone='13607210721', job=6, salary=0, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/aa027ee4-8160-4df3-b296-1427cd200c3d.jpg', entryDate=2025-07-01, deptId=13, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-21 21:35:28.690 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl.insertLog]
+2025-07-21 21:35:28.692 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1601302254 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09] for JDBC transaction
+2025-07-21 21:35:28.692 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1601302254 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09] to manual commit
+2025-07-21 21:35:28.693 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:35:28.693 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl@1820c0b2
+2025-07-21 21:35:28.693 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl
+2025-07-21 21:35:28.693 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：insertLog
+2025-07-21 21:35:28.693 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpLog(id=null, operateTime=2025-07-21T21:35:28.690565, info=新增员工Emp{id=63, username='white', password='null', name='白', gender=2, phone='13607210721', job=6, salary=0, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/aa027ee4-8160-4df3-b296-1427cd200c3d.jpg', entryDate=2025-07-01, deptId=13, createTime=2025-07-21T21:35:28.649046, updateTime=2025-07-21T21:35:28.649046, deptName='null', exprList=null})
+2025-07-21 21:35:28.737 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-21 21:35:28.737 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1601302254 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09]
+2025-07-21 21:35:28.794 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1601302254 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09] after transaction
+2025-07-21 21:35:28.794 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-07-21 21:35:28.795 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-21 21:35:28.795 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@89922660 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065]
+2025-07-21 21:35:28.827 [http-nio-8080-exec-10] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@89922660 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065] after transaction
+2025-07-21 21:35:28.847 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:35:28.847 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:35:28.847 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:35:28.847 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:35:28.847 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:35:28.847 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:35:40.720 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:35:40.721 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:35:40.721 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:35:40.721 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:35:40.721 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:35:40.722 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:39:18.335 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：QQ图片20241228212055.jpg
+2025-07-21 21:39:20.793 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/eb1564da-483e-44e3-bcc7-301304a64930.jpg
+2025-07-21 21:39:43.227 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-新增员工信息：Emp{id=null, username='0d00', password='null', name='绫地宁宁', gender=2, phone='23307210721', job=2, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/eb1564da-483e-44e3-bcc7-301304a64930.jpg', entryDate=2025-07-01, deptId=12, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-21 21:39:43.227 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-21 21:39:43.228 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1979826038 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065] for JDBC transaction
+2025-07-21 21:39:43.229 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1979826038 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065] to manual commit
+2025-07-21 21:39:43.229 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:39:43.229 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:39:43.230 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:39:43.230 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：save
+2025-07-21 21:39:43.230 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='0d00', password='null', name='绫地宁宁', gender=2, phone='23307210721', job=2, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/eb1564da-483e-44e3-bcc7-301304a64930.jpg', entryDate=2025-07-01, deptId=12, createTime=null, updateTime=null, deptName='null', exprList=null}
+2025-07-21 21:39:43.235 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl.insertLog]
+2025-07-21 21:39:43.236 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@643749367 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09] for JDBC transaction
+2025-07-21 21:39:43.236 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@643749367 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09] to manual commit
+2025-07-21 21:39:43.237 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:39:43.238 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl@1820c0b2
+2025-07-21 21:39:43.238 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl
+2025-07-21 21:39:43.238 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：insertLog
+2025-07-21 21:39:43.238 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpLog(id=null, operateTime=2025-07-21T21:39:43.234132300, info=新增员工Emp{id=64, username='0d00', password='null', name='绫地宁宁', gender=2, phone='23307210721', job=2, salary=10000, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/eb1564da-483e-44e3-bcc7-301304a64930.jpg', entryDate=2025-07-01, deptId=12, createTime=2025-07-21T21:39:43.230127500, updateTime=2025-07-21T21:39:43.230127500, deptName='null', exprList=null})
+2025-07-21 21:39:43.240 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-21 21:39:43.241 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@643749367 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09]
+2025-07-21 21:39:43.313 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@643749367 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09] after transaction
+2025-07-21 21:39:43.314 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-07-21 21:39:43.314 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-21 21:39:43.314 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1979826038 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065]
+2025-07-21 21:39:43.336 [http-nio-8080-exec-3] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1979826038 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065] after transaction
+2025-07-21 21:39:43.359 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:39:43.359 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:39:43.359 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:39:43.359 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:39:43.359 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:39:43.359 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:46:39.846 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:46:39.847 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:46:39.847 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:46:39.847 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:46:39.847 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:46:39.847 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:46:39.850 [http-nio-8080-exec-4] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:46:39.851 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:46:39.851 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:46:39.851 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:46:39.852 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:46:39.852 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:48:43.898 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:48:43.899 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:48:43.899 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:48:43.899 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:48:43.899 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:48:43.899 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:48:43.904 [http-nio-8080-exec-7] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:48:43.904 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:48:43.904 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:48:43.905 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:48:43.905 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:48:43.905 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:49:44.827 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：QQ图片20241218164853.jpg
+2025-07-21 21:49:45.360 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/1214443e-2356-489f-892a-1774554494c7.jpg
+2025-07-21 21:49:58.037 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-新增员工信息：Emp{id=null, username='0d000', password='null', name='绫地宁宁0', gender=2, phone='12307211234', job=1, salary=20, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/1214443e-2356-489f-892a-1774554494c7.jpg', entryDate=2025-07-18, deptId=7, createTime=null, updateTime=null, deptName='null', exprList=[EmpExpr(id=null, empId=null, begin=2025-07-15, end=2025-08-12, company=0d00, job=0d00)]}
+2025-07-21 21:49:58.053 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-21 21:49:58.054 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@1419828896 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065] for JDBC transaction
+2025-07-21 21:49:58.054 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@1419828896 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065] to manual commit
+2025-07-21 21:49:58.055 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:49:58.055 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:49:58.055 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:49:58.055 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：save
+2025-07-21 21:49:58.055 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='0d000', password='null', name='绫地宁宁0', gender=2, phone='12307211234', job=1, salary=20, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/1214443e-2356-489f-892a-1774554494c7.jpg', entryDate=2025-07-18, deptId=7, createTime=null, updateTime=null, deptName='null', exprList=[EmpExpr(id=null, empId=null, begin=2025-07-15, end=2025-08-12, company=0d00, job=0d00)]}
+2025-07-21 21:49:58.075 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl.insertLog]
+2025-07-21 21:49:58.076 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@487518393 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09] for JDBC transaction
+2025-07-21 21:49:58.076 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@487518393 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09] to manual commit
+2025-07-21 21:49:58.077 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:49:58.077 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl@1820c0b2
+2025-07-21 21:49:58.077 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl
+2025-07-21 21:49:58.077 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：insertLog
+2025-07-21 21:49:58.077 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpLog(id=null, operateTime=2025-07-21T21:49:58.074118900, info=新增员工Emp{id=65, username='0d000', password='null', name='绫地宁宁0', gender=2, phone='12307211234', job=1, salary=20, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/1214443e-2356-489f-892a-1774554494c7.jpg', entryDate=2025-07-18, deptId=7, createTime=2025-07-21T21:49:58.055118400, updateTime=2025-07-21T21:49:58.055118400, deptName='null', exprList=[EmpExpr(id=null, empId=65, begin=2025-07-15, end=2025-08-12, company=0d00, job=0d00)]})
+2025-07-21 21:49:58.117 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-21 21:49:58.117 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@487518393 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09]
+2025-07-21 21:49:58.153 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@487518393 wrapping com.mysql.cj.jdbc.ConnectionImpl@40ccc09] after transaction
+2025-07-21 21:49:58.153 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-07-21 21:49:58.153 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-21 21:49:58.153 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@1419828896 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065]
+2025-07-21 21:49:58.177 [http-nio-8080-exec-9] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@1419828896 wrapping com.mysql.cj.jdbc.ConnectionImpl@2ccb0065] after transaction
+2025-07-21 21:49:58.195 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:49:58.195 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:49:58.195 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:49:58.195 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:49:58.195 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:49:58.195 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:51:05.144 [http-nio-8080-exec-1] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:51:05.144 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:51:05.145 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:51:05.145 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:51:05.145 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:51:05.145 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:51:05.152 [http-nio-8080-exec-3] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:51:05.152 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:51:05.152 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:51:05.153 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:51:05.153 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:51:05.153 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 21:57:53.640 [http-nio-8080-exec-2] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:57:53.640 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:57:53.641 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 21:57:53.641 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 21:57:53.641 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 21:57:53.641 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 21:57:53.646 [http-nio-8080-exec-4] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 21:57:53.646 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 21:57:53.646 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 21:57:53.646 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 21:57:53.647 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 21:57:53.647 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 22:31:07.696 [http-nio-8080-exec-6] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:31:07.704 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:31:07.704 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 22:31:07.705 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 22:31:07.705 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 22:31:07.705 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:31:07.708 [http-nio-8080-exec-7] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 22:31:07.708 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:31:07.708 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 22:31:07.708 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 22:31:07.708 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 22:31:07.709 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 22:54:46.774 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:54:46.779 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:54:46.780 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 22:54:46.780 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 22:54:46.780 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 22:54:46.780 [http-nio-8080-exec-5] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:54:46.781 [http-nio-8080-exec-10] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 22:54:46.781 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:54:46.782 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 22:54:46.782 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 22:54:46.782 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 22:54:46.782 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 22:55:11.742 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:55:11.742 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:55:11.742 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 22:55:11.742 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 22:55:11.743 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 22:55:11.743 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:55:11.756 [http-nio-8080-exec-8] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 22:55:11.756 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:55:11.756 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 22:55:11.756 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 22:55:11.756 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 22:55:11.757 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 22:55:34.946 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:55:34.946 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:55:34.946 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 22:55:34.946 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 22:55:34.946 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 22:55:34.946 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:55:35.058 [http-nio-8080-exec-1] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 22:55:35.059 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:55:35.059 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 22:55:35.061 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 22:55:35.063 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 22:55:35.064 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 22:56:06.629 [http-nio-8080-exec-4] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:56:06.629 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:56:06.629 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 22:56:06.630 [http-nio-8080-exec-2] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 22:56:06.630 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 22:56:06.629 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 22:56:06.630 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 22:56:06.630 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 22:56:06.630 [http-nio-8080-exec-4] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 22:56:06.630 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 22:56:06.630 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 22:56:06.630 [http-nio-8080-exec-2] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 23:04:51.149 [http-nio-8080-exec-7] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 23:04:51.149 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 23:04:51.149 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 23:04:51.149 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 23:04:51.150 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 23:04:51.150 [http-nio-8080-exec-7] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 23:04:51.168 [http-nio-8080-exec-6] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 23:04:51.168 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 23:04:51.169 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 23:04:51.169 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 23:04:51.169 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 23:04:51.169 [http-nio-8080-exec-6] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 23:04:52.512 [http-nio-8080-exec-10] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 23:04:52.512 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 23:04:52.512 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 23:04:52.512 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 23:04:52.513 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 23:04:52.513 [http-nio-8080-exec-10] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 23:05:59.275 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：QQ图片20241222202103.jpg
+2025-07-21 23:06:00.217 [http-nio-8080-exec-5] INFO  c.kei.tliaswebmanagement1.controller.EmpController-文件上传：https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg
+2025-07-21 23:06:11.111 [http-nio-8080-exec-8] INFO  c.kei.tliaswebmanagement1.controller.EmpController-新增员工信息：Emp{id=null, username='baibai', password='null', name='百变白白', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=null, updateTime=null, deptName='null', exprList=[]}
+2025-07-21 23:06:11.117 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,-java.lang.Exception
+2025-07-21 23:06:11.118 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@471676065 wrapping com.mysql.cj.jdbc.ConnectionImpl@2a2ba4e3] for JDBC transaction
+2025-07-21 23:06:11.118 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@471676065 wrapping com.mysql.cj.jdbc.ConnectionImpl@2a2ba4e3] to manual commit
+2025-07-21 23:06:11.119 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 23:06:11.119 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 23:06:11.119 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 23:06:11.119 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：save
+2025-07-21 23:06:11.119 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：Emp{id=null, username='baibai', password='null', name='百变白白', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=null, updateTime=null, deptName='null', exprList=[]}
+2025-07-21 23:06:11.446 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Suspending current transaction, creating new transaction with name [com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl.insertLog]
+2025-07-21 23:06:11.447 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Acquired Connection [HikariProxyConnection@815305437 wrapping com.mysql.cj.jdbc.ConnectionImpl@297defb7] for JDBC transaction
+2025-07-21 23:06:11.447 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Switching JDBC Connection [HikariProxyConnection@815305437 wrapping com.mysql.cj.jdbc.ConnectionImpl@297defb7] to manual commit
+2025-07-21 23:06:11.447 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 23:06:11.447 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl@1820c0b2
+2025-07-21 23:06:11.447 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpLogServiceImpl
+2025-07-21 23:06:11.447 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：insertLog
+2025-07-21 23:06:11.447 [http-nio-8080-exec-8] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpLog(id=null, operateTime=2025-07-21T23:06:11.446900, info=新增员工Emp{id=66, username='baibai', password='null', name='百变白白', gender=2, phone='13600000721', job=1, salary=123, image='https://kei-web.oss-cn-beijing.aliyuncs.com/2025/07/abff1811-b418-42dd-b53b-c7967d0ff663.jpg', entryDate=2025-07-12, deptId=13, createTime=2025-07-21T23:06:11.120941300, updateTime=2025-07-21T23:06:11.120941300, deptName='null', exprList=[]})
+2025-07-21 23:06:11.494 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-21 23:06:11.495 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@815305437 wrapping com.mysql.cj.jdbc.ConnectionImpl@297defb7]
+2025-07-21 23:06:11.596 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@815305437 wrapping com.mysql.cj.jdbc.ConnectionImpl@297defb7] after transaction
+2025-07-21 23:06:11.597 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Resuming suspended transaction after completion of inner transaction
+2025-07-21 23:06:11.597 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Initiating transaction commit
+2025-07-21 23:06:11.598 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Committing JDBC transaction on Connection [HikariProxyConnection@471676065 wrapping com.mysql.cj.jdbc.ConnectionImpl@2a2ba4e3]
+2025-07-21 23:06:11.645 [http-nio-8080-exec-8] DEBUG o.s.jdbc.support.JdbcTransactionManager-Releasing JDBC Connection [HikariProxyConnection@471676065 wrapping com.mysql.cj.jdbc.ConnectionImpl@2a2ba4e3] after transaction
+2025-07-21 23:06:11.670 [http-nio-8080-exec-9] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 23:06:11.671 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 23:06:11.671 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 23:06:11.671 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 23:06:11.671 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 23:06:11.671 [http-nio-8080-exec-9] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 23:07:56.546 [http-nio-8080-exec-3] INFO  c.kei.tliaswebmanagement1.controller.EmpController-分页查询：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 23:07:56.546 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 23:07:56.546 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl@7249416b
+2025-07-21 23:07:56.546 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.EmpServiceImpl
+2025-07-21 23:07:56.546 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：pageByPageHelper
+2025-07-21 23:07:56.547 [http-nio-8080-exec-3] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：EmpQueryParam(name=, gender=null, begin=null, end=null, page=1, pageSize=5)
+2025-07-21 23:07:56.626 [http-nio-8080-exec-1] INFO  c.k.tliaswebmanagement1.controller.DeptController-查询全部乐队数据
+2025-07-21 23:07:56.626 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-before
+2025-07-21 23:07:56.626 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标对象：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl@226b5828
+2025-07-21 23:07:56.626 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标类：com.kei.tliaswebmanagement1.service.Impl.DeptServiceImpl
+2025-07-21 23:07:56.626 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法：findAll
+2025-07-21 23:07:56.626 [http-nio-8080-exec-1] INFO  com.kei.tliaswebmanagement1.aop.RecordTimeAspect-目标方法参数：{}
+2025-07-21 23:09:45.278 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-21 23:09:46.048 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown-Graceful shutdown complete
+2025-07-21 23:09:46.086 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2025-07-21 23:09:46.101 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
