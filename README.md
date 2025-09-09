@@ -43,16 +43,16 @@ TLias Web Management System 是一个完整的企业管理后台系统，采用�
 - 阿里云OSS集成
 
 ## 项目结构
-├── anno # 自定义注解 
-├── aop # AOP切面逻辑 
-├── config # 配置类 
-├── controller # 控制器层 
-├── exception # 异常处理 
-├── filter # 过滤器 
-├── interceptor # 拦截器 
-├── mapper # 数据访问层 
-├── pojo # 实体类 
-├── service # 业务逻辑层 
+├── anno # 自定义注解 <br>
+├── aop # AOP切面逻辑 <br>
+├── config # 配置类 <br>
+├── controller # 控制器层 <br>
+├── exception # 异常处理 <br>
+├── filter # 过滤器 <br>
+├── interceptor # 拦截器 <br>
+├── mapper # 数据访问层 <br>
+├── pojo # 实体类 <br>
+├── service # 业务逻辑层 <br>
 └── utils # 工具类
 
 ## 环境要求
