@@ -2,6 +2,11 @@
 
 基于Spring Boot的企业级后台管理系统(套皮成Bangdream少女乐队的形式了)，提供员工管理、部门管理、班级管理、学生管理等核心功能。
 
+后端项目仓库：[https://github.com/JackSmith111977/BangdreamManagement-backend](https://github.com/JackSmith111977/BangdreamManagement-backend)
+前端项目仓库：[https://github.com/JackSmith111977/BangdreamManagement-frontend](https://github.com/JackSmith111977/BangdreamManagement-frontend)
+
+前后端项目通过Docker部署在了阿里云Ecs服务器中，项目效果展示：[kei.click](kei.click)
+
 ## 项目简介
 
 TLias Web Management System 是一个完整的企业管理后台系统，采用现代化的Java技术栈构建，具备完善的权限控制、日志记录、数据统计等功能。
